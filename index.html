@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>BubbleTEA</title>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("Btn").style.display = "block";
+            } else {
+                document.getElementById("Btn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
+</head>
+<body>
+    <!-- Slide Bar -->
+	<div id="slideout">
+		<div id="slideout_inner">
+			 <div class="nav_link">
+                <img src="./img/bg/facebook.png" width="30" height="30">
+                <img src="./img/bg/twitter.png" width="30" height="30">
+                <img src="./img/bg/instagram.png" width="30" height="30">
+            </div>
+            <ul class="menu_choice">
+                <li class="menu_item"><a href="index.html">HOME</a></li>
+                <li class="menu_item"><a href="About.html">ABOUT</a></li>
+                <li class="menu_item"><a href="type.html">TYPE</a></li>
+                <li class="menu_item"><a href="news.html">NEWS</a></li>
+                <li class="menu_item"><a href="rewards.html">REWARDS</a></li>
+                <li class="menu_item"><a href="contact.html">CONTACT</a></li>
+            </ul>
+	    </div>
+	</div>
+
+    <!-- Top Bar -->
+    <div id="main menu">
+        <div class="logo_area">
+            <a href="index.html">BubbleTEA</a>
+        </div>
+        <div class="mem">
+		    <a href="account.html">Account</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="login.html">Login</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="register.html">Register</a>
+	    </div>
+        <div class="main_menu">
+            <ul>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Type.html">TYPE</a></li>
+                <li><a href="News.html">NEWS</a></li>
+                <li><a href="rewards.html">REWARDS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Home-->
+    <section id="Home">
+        <div class="Homepage"><img src="./img/bg/Home.png" height="auto" max-width="100%"></div>
+    </section>
+    
+          
+    <!-- video -->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/xebewT6lh2k" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <!--on top btn-->
+    <button onclick="topFunction()" id="Btn" title="Go to top">Top</button>
+
+    <!-- Footer -->
+    <div class="indexfooter">
+        <footer>Copyright &copy; 2019 BubbleTEA. All rights reserved. </footer>
+    </div>
+    <script src="account.js"></script>
+</body>
+</html>
